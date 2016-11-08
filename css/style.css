@@ -1,31 +1,410 @@
-body {
-    font-size: 17px;
-    line-height: 24px;
-    color: #ffffff;
-    font-weight: normal;
-    font-family: "Cuprum";
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
 }
 
-main {
-    font-size: 13px;
-    line-height: 18px;
-    color: #000000;
-    font-weight: normal;
-    font-family: "PT Sans";
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+    width: 940px;
+    padding: 0 10px;
+    margin: 0 auto;
+    background-color:aqua; 
+}
+
+/*общий header*/
+.main-header {
+}
+.user-block {
+    min-height: 42px;
+}
+
+.user-block form {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 25px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    vertical-align: top;
+    width: 250px;
+}
+.header-user {
+    padding-top: 48px;
+    padding-bottom: 60px;
+}
+.user-menu {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.user-header {
+    margin-bottom: 44px;
+}
+
+.about-info {
+    float:left;
+    width: 205px;
+    margin-right: 68px;
+}
+
+.contacts-info {
+    float:left;
+    width: 270px;
+    margin-right: 70px;
+}
+
+.login {
+    float: right;
+    width: 281px;
+}
+
+.main-navigation {
+    margin-top: 44px;  
+}
+
+.main-navigation ul{
+    display: inline-block;
+    list-style: none; 
+    margin: 0;
+    padding-left: 0;
+}
+
+.main-navigation a {
+    text-decoration: none;
+}
+
+.main-navigation li {
+    display: inline-block;
+}
+
+/*стили для index*/
+
+.main-menu{
+    font-size: 0px;
+    margin-bottom: 53px;
+}
+
+.materials{
+    display: inline-block;
+    width: 300px;
+    min-height: 123px;
+    vertical-align: top;
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.instruments{
+    display: inline-block;
+    width: 300px;
+    min-height: 123px;
+    vertical-align: top;
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.equipment {
+    display: inline-block;
+    width: 300px;
+    min-height: 123px;
+    vertical-align: top;
+    font-size: 14px;
+}
+
+.slider {
+    float: left;
+    width: 620px;
+    min-height: 266px;
+    vertical-align: top;
+    font-size: 14px
+}
+.sales {
+    display: inline-block;
+    width: 300px;
+    min-height: 123px;
+    vertical-align: top;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.delivery {
+    display: inline-block;
+    width: 300px;
+    min-height: 123px;
+    vertical-align: top;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.popular-goods {
+    margin-bottom: 20px;
+}
+
+.header-goods {
+    margin-bottom: 20px;
+    min-height: 90px;
+}
+
+.header-goods p {
+    width: 270px;
+    float: left;
+    margin-right: 360px;
+    padding-top: 19px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+}
+
+.header-goods a{
+    display: block;
+    float: right;
+    padding-top: 25px;
+    padding-bottom: 26px;
+    padding-right: 24px;
+}
+
+.product-line {
+    font-size: 0px;
+}
+
+.product:nth-child(4n) {
+    margin-right: 0;
 }
 
 .product {
-    font-size: 18px;
-    line-height: 20px;
-    color: #000000;
-    font-weight: Bold;
-    font-family: "PT Sans";
+    display: inline-block;
+    width: 220px;
+    min-height: 318px;
+    margin-right :20px;
+    margin-bottom: 20px;
+    vertical-align: top;
+    font-size: 14px;
 }
 
-s {
-    font-size: 17px;
-    line-height: 18px;
-    color: #999999;
-    font-weight: Bold;
-    font-family: "PT Sans";
+.product img {
+    width: 184px;
+    height: 164px;
+}
+
+.popular-producers {
+    margin-bottom: 85px;
+}
+
+.header-producers {
+    margin-bottom: 20px;
+}
+
+.header-products p {
+    width: 375px;
+    float: left;
+    margin-right: 262px;
+    padding-top: 19px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+}
+
+.header-products a{
+     display: block;
+    float: right;
+    padding-top: 25px;
+    padding-bottom: 26px;
+    padding-right: 24px;
+}
+
+.production-line {
+    font-size: 0px;
+}
+
+.production:nth-child(4n) {
+    margin-right: 0;
+}
+
+.production {
+    display: inline-block;
+    width: 220px;
+    height: 125px;
+    margin-right :20px;
+    margin-bottom: 20px;
+    vertical-align: top;
+    font-size: 14px;
+}
+
+.production a{
+}
+
+.services-about h3{
+    margin-top: 80px;
+    width: 110px;
+}
+
+.services-about{
+    margin-top: 30px;
+    width: 400px;
+}
+
+.services-menu ul{
+    list-style: none; 
+    margin: 0;
+    padding-left: 0;
+    
+}
+
+.services-menu a{
+    text-decoration: none;
+}
+.services-menu {
+    float: left;
+    margin-top: 70px;
+    width: 240px;
+    margin-right: 80px;
+}
+
+.services-delivery {
+    margin-top: 70px;
+    float: left;
+    width: 620px;
+}
+
+.company-info {
+    padding-top: 80px;
+    padding-bottom: 85px;
+}
+
+.company-about {
+    float: left;
+    width: 542px;
+}
+
+.company-contacts {
+    float: right;
+    width: 300px;
+}
+
+/*стили catalog*/
+
+.bredcrumbs {
+    padding-top: 27px;
+    padding-bottom: 28px;
+}
+
+.breadcrumbs ul{
+    display: inline-block;
+    list-style: none; 
+    margin: 0;
+    padding-left: 0;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+}
+
+.breadcrumbs li {
+    display: inline-block;
+}
+
+page-name {
+    padding-left: 30px;
+    padding-top: 32px;
+    padding-bottom: 35px;
+}
+
+.filter-header {
+    float: left;
+    margin-bottom: 20px;
+}
+
+.sorting {
+    float: right;
+    margin-bottom: 20px;
+}
+
+.sorting ul{
+    display: inline-block;
+    list-style: none; 
+    margin: 0;
+    padding-left: 0;
+}
+
+.sorting a {
+    text-decoration: none;
+}
+
+.sorting li {
+    display: inline-block;
+}
+
+.sorting p {
+    display: inline-block
+}
+
+.product-catalog{
+    width: 700px;
+    float:right;
+}
+
+.product-catalog .product:nth-child(3n) {
+    margin-right: 0;
+}
+
+/* не получаетсяих вообще выровнять*/
+.filter {
+    width: 220px;
+    min-height: 1000px;
+    float:left;
+}
+
+/*общий footer*/
+
+.footer-navigation ul{
+    display: inline-block;
+    list-style: none; 
+    margin: 0;
+    padding-left: 0;
+    float: right;
+    clear: both;
+}
+
+.footer-navigation a{
+    text-decoration: none;
+}
+
+.footer-navigation li{
+    display: inline-block;
+}
+
+.footer-catalog ul{
+    display: inline-block;
+    list-style: none; 
+    margin: 0;
+    padding-left: 0;
+    float: right;
+    clear: both
+}
+
+.footer-catalog a{
+    text-decoration: none;
+}
+
+.footer-catalog li{
+    display: inline-block;
+}
+
+footer-about {
+    padding-top: 40px;
+}
+
+.footer-company {
+    float: left;
+}
+
+.footer-social {
+    float: left;
+}
+
+.footer-contacts {
+    float: right;
 }

@@ -9,7 +9,7 @@
     <body>
         
         <header class="main-header">
-            <div class="container">
+            <div class="container clearfix">
             <div class="user-block">
                 <a class="main-page" href="#"><img src="img/ТЕХНОМАРТ.png" alt="Главная страница"></a>
                 <form action="#" method="post">
@@ -21,9 +21,10 @@
                 <a class="user-menu" href="#">Оформить заказ</a>
             </div>
             </div>
+            
             <div class="header-user">
-            <div class="container">
-            <div class="user-info">
+            <div class="container clearfix">
+                <div class="user-header">
             <div class="about-info">
                 <p>Интернет магазин строительных материалов и инструментов для ремонта</p>
             </div>
@@ -39,8 +40,11 @@
                     <a href="#">Войти</a>
                     <a href="#">Регистрация</a>                     
                 </div>
+                </div>
             </div>
-            <nav class="main-navigation">
+            <div class="container clearfix">
+                <nav class="main-navigation">
+                
                 <ul>
                     <li>
                         <a href="#">Главная</a>
@@ -66,40 +70,58 @@
                 </ul>
             </nav>
                 </div>
-            </div>
+                </div>
+            
         </header>
         <main class="container">
-            <div class="main-index">
+            
                 <div class="main-menu">
-                    <articles class="Materials">
+                    <articles class="materials">
                         <p>Материалы</p>
                         <a href="#">НА ЛЮБОЙ ВКУС</a>
                         <img src="img/Layer%2092.png" alt="материалы">
                     </articles>
-                    <articles class="Instruments">
+                    <articles class="instruments">
                         <p>Инструмент</p>
                         <a href="#">НА ВСЕ СЛУЧАИ</a>
                         <img src="img/Layer%2096.png" alt="инструмент">
                     </articles>
-                    <articles class="Equipment">
+                    <articles class="equipment">
                         <p>Техника</p>
                         <a href="#">ДЛЯ СТРОЙКИ</a>
                         <img src="img/Layer%2095.png" alt="техника">
                     </articles>
-                    <articles class="SALES">
+                    <div class="slider">
+                        <input type="radio" checked="checked">
+                        <input type="radio">
+                        <label class="leftbutton"><img></label>
+                        <label class="rightbutton"><img></label>
+                        <div class="controlbuttons">
+                            <label class="first_slide_button"></label>
+                            <label class="second_slide_button"></label>
+                        </div>
+                        <div class="slide slide_1"></div>
+                        <div class="slide slide_2"></div>
+                    </div>
+                    <articles class="sales">
                         <p>Скидки 50%</p>
                         <a href="#">НА 350 ТОВАРОВ</a>
                         <img src="img/Layer%20100.png" alt="скидки">
                     </articles>
-                    <articles class="Delivery">
+                    <articles class="delivery">
                         <p>Доставка</p>
                         <a href="#">БЕСПЛАТНО</a>
                         <img src="img/Layer%20101.png" alt="доставка">
                     </articles>
                 </div>
-                <div class="popular-goods">
-                    <h2>ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
+                <div class="popular-goods clearfix">
+                    <div class="header-goods clearfix">
+                   
+                    <p>ПОПУЛЯРНЫЕ ТОВАРЫ:</p>
                     <a href="#">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
+                    
+                    </div>
+                    <div class="product-line">
                     <article class="product">
                         <img src="img/snippet-32961%20copy%203.png" alt="перфоратор">
                         <p>Перфоратор BOSCH BFG 9000</p>
@@ -123,10 +145,15 @@
                         <p>Перфоратор BOSCH BFG 2000</p>
                         <a href="#">12 500 Р.</a>
                     </article>
-                </div>
-                <div class="popular-producers">
-                    <h2>ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2>
+                    </div>
+                    </div>
+                
+                <div class="popular-producers clearfix">
+                    <div class="header-products clearfix">
+                    <p>ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</p>
                     <a href="#">ВСЕ ПРОИЗВОДИТЕЛИ</a>
+                    </div>
+                    <div class="production-line">
                     <article class="production">
                         <a href="#"><img src="img/bosch.png" alt="bosch"></a>
                     </article>
@@ -153,7 +180,8 @@
                     </article>
                 </div>
             </div>
-            <div class="Services">
+            
+            <div class="services clearfix">
                 <div class="services-about">
                     <h3>СЕРВИСЫ</h3>
                     <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки принятными</p>
@@ -161,17 +189,17 @@
                 <div class="services-menu">
                     <ul>
                         <li>Доставка</li>
-                        <li>Доставка</li>    
-                        <li>Доставка</li>
+                        <li>Гарантия</li>    
+                        <li>Кредит</li>
                     </ul>
                 </div>
                 <div class="services-delivery">
                     <h2>ДОСТАВКА</h2>
                     <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно беслпатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж</p>
-                    <img src="img/Layer%20131.png" alt="доставка">
+                    <!--<img src="img/Layer%20131.png" alt="доставка">-->
                 </div>
             </div>
-            <div class="company-info">
+            <div class="company-info clearfix">
                 <div class="company-about">
                     <h3>КОМПАНИЯ "ТЕХНОМАРТ"</h3>
                     <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.</p>
@@ -185,7 +213,7 @@
                 </div>
                 <div class="company-contacts">
                     <h3>КОНТАКТЫ</h3>
-                    <p>ВЫ можете забрать товар сами, заехава в наш офис:</p>
+                    <p>Вы можете забрать товар сами, заехава в наш офис:</p>
                     <img src="img/map.jpg" alt="карта">
                     <a href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
                 </div>
@@ -193,9 +221,13 @@
         </main>
     
       <footer class="container">
-            <div class="footer-nav">
+            <div class="footer-nav clearfix">
+                <div class="logo">
                 <a class="main-page" href="#"><img src="img/%D0%A2%D0%95%D0%A5%D0%9D%D0%9E%D0%9C%D0%90%D0%A0%D0%A2.png" alt="Главная страница"></a>
+                </div>
+                <div class="footer-adress">
                 <p>г. Санкт-Петербруг, ул. Б. Конюшенная, д. 19/8<br>+7(818) 555-05-55</p>
+                </div>
                 <nav class="footer-navigation">
                     <ul>
                         <li>
@@ -232,7 +264,7 @@
                     </ul>
                 </nav>
             </div>
-            <div class="footer-about">
+            <div class="footer-about clearfix">
                 <div class="footer-company">
                     <p> © 2010-2016 Компания "Техномарт"<br>Все права защищены</p>          
                 </div>

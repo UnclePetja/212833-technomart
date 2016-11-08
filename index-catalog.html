@@ -7,10 +7,11 @@
     </head>
     
     <body>
-        
-        <header class="container">
+  
+        <header class="main-header">
+            <div class="container clearfix">
             <div class="user-block">
-                <a class="main-page" href="#"><img src="img/%D0%A2%D0%95%D0%A5%D0%9D%D0%9E%D0%9C%D0%90%D0%A0%D0%A2.png" alt="главная страница"></a>
+                <a class="main-page" href="#"><img src="img/ТЕХНОМАРТ.png" alt="Главная страница"></a>
                 <form action="#" method="post">
                     <input type="search" name="search" placeholder="Поиск:">
                     <input type="submit" value="Найти">
@@ -19,7 +20,11 @@
                 <a class="user-menu" href="#">Корзина:10</a>
                 <a class="user-menu" href="#">Оформить заказ</a>
             </div>
-            <div class="user-info">
+            </div>
+            
+            <div class="header-user">
+            <div class="container clearfix">
+                <div class="user-header">
             <div class="about-info">
                 <p>Интернет магазин строительных материалов и инструментов для ремонта</p>
             </div>
@@ -35,10 +40,13 @@
                     <a href="#">Равшан Джамшутович</a>
                     <a href="#"><img src="#"></a>
                     <a href="#">Мои заказы</a>
-                    <a href="#">Личный кобинет</a>
+                    <a href="#">Личный кобинет</a>                     
+                </div>
                 </div>
             </div>
-            <nav class="main-navigation">
+            <div class="container clearfix">
+                <nav class="main-navigation">
+                
                 <ul>
                     <li>
                         <a href="#">Главная</a>
@@ -63,11 +71,18 @@
                     </li>
                 </ul>
             </nav>
+                </div>
+                </div>
+            
         </header>
+            
         
-        <main class="container">
+        <main class="container clearfix">
             <div class="breadcrumbs">
                 <ul>
+                    <li>
+                        <a href="#"><img src="#"></a>
+                    </li>
                     <li>
                         <a href="#">Каталог</a>
                     </li>
@@ -79,9 +94,25 @@
                     </li>
                 </ul>
             </div>
+            <div class="page-name">
             <h2>ПЕРФОРАТОРЫ</h2>
+            </div>
+            <div class="filter-sorting clearfix">
+            <p class="filter-header">ФИЛЬТР:</p>
+            <div class="sorting">
+                <p>СОРТИРОВКА:</p>
+                <ul>
+                    <li><a href="#" class="selected">ПО ЦЕНЕ</a></li>
+                    <li><a href="#">ПО ТИПУ</a></li>
+                    <li><a href="#">ПО ФУНКЦИОНАЛУ</a></li>
+                    <li><a href="#"><img src="#"></a></li>
+                    <li><a href="#"><img src="#"></a></li>
+                </ul>   
+            </div>
+                           
+            </div>
             <div class="filter">
-                <p>ФИЛЬТР:</p>
+                <p>ЦЕНА:</p>
                 <div class="double-range">
                     <div class="background_line"></div>
                     <div class="selected_line"></div>
@@ -116,17 +147,9 @@
                     <input type="submit" value="ПОКАЗАТЬ">
                 </form> 
             </div>
-            <div class="sorting">
-                <p>СОРТИРОВКА:</p>
-                <ul>
-                    <li><a href="#" class="selected">ПО ЦЕНЕ</a></li>
-                    <li><a href="#">ПО ТИПУ</a></li>
-                    <li><a href="#">ПО ФУНКЦИОНАЛУ</a></li>
-                    <li><a href="#"><img src="#"></a></li>
-                    <li><a href="#"><img src="#"></a></li>
-                </ul>   
-            </div>
+            
             <div class="goods">
+                <div class="product-catalog">
                 <article class="product">
                     <img src="img/snippet-18927%20copy%202.png" alt="перфоратор">
                     <p>Перфоратор BOSCH BFG 3000</p>
@@ -179,6 +202,7 @@
                     <p>Перфоратор BOSCH BFG 2000</p>
                     <a href="#">12 500Р.</a>
                 </article>
+                </div>
                 <div class="pages">
                     <ul>
                         <li><a href="#" class="selected">1</a></li>
@@ -195,9 +219,13 @@
         </main>
         
         <footer class="container">
-            <div class="footer-nav">
-                <a class="main-page" href="#"><img src="img/%D0%A2%D0%95%D0%A5%D0%9D%D0%9E%D0%9C%D0%90%D0%A0%D0%A2.png" alt="главная страница"></a>
+            <div class="footer-nav clearfix">
+                <div class="logo">
+                <a class="main-page" href="#"><img src="img/%D0%A2%D0%95%D0%A5%D0%9D%D0%9E%D0%9C%D0%90%D0%A0%D0%A2.png" alt="Главная страница"></a>
+                </div>
+                <div class="footer-adress">
                 <p>г. Санкт-Петербруг, ул. Б. Конюшенная, д. 19/8<br>+7(818) 555-05-55</p>
+                </div>
                 <nav class="footer-navigation">
                     <ul>
                         <li>
@@ -234,7 +262,7 @@
                     </ul>
                 </nav>
             </div>
-            <div class="footer-about">
+            <div class="footer-about clearfix">
                 <div class="footer-company">
                     <p> © 2010-2016 Компания "Техномарт"<br>Все права защищены</p>          
                 </div>
